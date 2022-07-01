@@ -22,10 +22,14 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3011 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint src/**/*.{ts,tsx}"
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "lint:fix": "eslint src/**/*.{ts,tsx} --fix",
+    "prettier": "prettier src/**/*.{ts,tsx} --check",
+    "prettier:fix": "prettier src/**/*.{ts,tsx} --write",
+    "pre-commit": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
