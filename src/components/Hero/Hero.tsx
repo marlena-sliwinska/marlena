@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { chakra, Container, Stack, Text, Box } from '@chakra-ui/react';
 import WorkingWoman from '../Icons/WorkingWoman';
 
