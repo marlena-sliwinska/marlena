@@ -10,7 +10,7 @@ const Qualities = () => (
     mt={6}
   >
     {data.map(({ content, id }, index) => (
-      <Quality key={id} delay={index + 1} x={`${index * 10}px`}>
+      <Quality key={id} delay={index + 1} x={`${index * 15 - 20}px`}>
         {content}
       </Quality>
     ))}
