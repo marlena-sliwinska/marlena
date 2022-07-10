@@ -1,136 +1,88 @@
 import { Grid, GridItem } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import SkillIcon from '../SkillsIcons/SkillIcon';
+import SkillIcon from './components/SkillsIcons/SkillIcon';
 import SkillMainIcon from '../Icons/SkillMainIcon';
-import SkillBox from '../SkillBox/SkillBox';
+import SkillName from './components/SkillName/SkillName';
+import SkillBox from './components/SkillBox/SkillBox';
 
-const Skills = () => {
-  console.log('skills');
-  return (
-    <Grid
-      margin="0 auto"
-      maxWidth="7xl"
-      gridTemplateRows="repeat(7,100px)"
-      gridTemplateColumns="repeat(12,minmax(100px, auto))"
-      gap="2"
-      color="blackAlpha.700"
-      bg="orange.100"
-      fontWeight="bold"
-    >
-      <GridItem bg="orange.300" w={100} h={100} gridColumn="3/4" gridRow="2/3">
-        <motion.div
-          style={{ width: '100%', height: '100%' }}
-          animate={{ scale: 1 }}
-          initial={{ scale: 0.1 }}
-          transition={{
-            type: 'tween',
-            duration: 1,
-            delay: 0.1
-          }}
-        >
-          <SkillBox name="HTML">
-            <SkillIcon id="html" />
-          </SkillBox>
-        </motion.div>
-      </GridItem>
-      <GridItem bg="orange.300" w={100} h={100} gridColumn="6/7">
-        <motion.div
-          animate={{ scale: 1 }}
-          initial={{ scale: 0.1 }}
-          transition={{
-            type: 'tween',
-            duration: 0.4,
-            delay: 0.2
-          }}
-        >
+const Skills = () => (
+  <Grid
+    mr="50px"
+    gridTemplateRows="repeat(3,minmax(60px,1fr))"
+    gridTemplateColumns="repeat(5,minmax(60px,1fr))"
+    justifyContent="left"
+    gap="2"
+    fontWeight="bold"
+    margin="0 auto"
+  >
+    <GridItem w={100} h={100} gridColumn="1/2" gridRow="2/3">
+      <SkillBox
+        transition={{
+          type: 'tween',
+          duration: 1.1,
+          delay: 0.1
+        }}
+      >
+        <SkillName name="HTML">
+          <SkillIcon id="html" />
+        </SkillName>
+      </SkillBox>
+    </GridItem>
+    <GridItem w={90} h={90} gridColumn="2/3">
+      <SkillBox
+        transition={{
+          type: 'tween',
+          duration: 0.6,
+          delay: 0.2
+        }}
+      >
+        <SkillName name="CSS">
           <SkillIcon id="css" />
-        </motion.div>
-      </GridItem>
-      <GridItem bg="orange.300" w={100} h={100} gridColumn="3/4" gridRow="5/6">
-        <motion.div
-          animate={{ scale: 1 }}
-          initial={{ scale: 0.1 }}
-          transition={{
-            type: 'tween',
-            duration: 0.3,
-            delay: 0.5
-          }}
-        >
+        </SkillName>
+      </SkillBox>
+    </GridItem>
+    <GridItem w={100} h={100} gridColumn="2/3" gridRow="3/4">
+      <SkillBox
+        transition={{
+          type: 'tween',
+          duration: 0.5,
+          delay: 0.5
+        }}
+      >
+        <SkillName name="JavaScript">
           <SkillIcon id="javascript" />
-        </motion.div>
-      </GridItem>
-      <GridItem bg="orange.300" w={100} h={100} gridColumn="5/6" gridRow="6/7">
-        <motion.div
-          animate={{ scale: 1 }}
-          initial={{ scale: 0.1 }}
-          transition={{
-            type: 'tween',
-            duration: 0.7
-          }}
-        >
-          <SkillIcon id="typescript" />
-        </motion.div>
-      </GridItem>
-      <GridItem bg="orange.300" w={100} h={100} gridColumn="7/8" gridRow="7/8">
-        <SkillIcon id="git" />
-      </GridItem>
-      <GridItem bg="orange.300" w={100} h={100} gridColumn="7/8" gridRow="7/8">
-        <motion.div
-          animate={{ scale: 1 }}
-          initial={{ scale: 0.1 }}
-          transition={{
-            type: 'tween',
-            duration: 0.7,
-            delay: 0.1
-          }}
-        >
+        </SkillName>
+      </SkillBox>
+    </GridItem>
+    <GridItem w="70px" h="70px" gridColumn="4/5" gridRow="1/2">
+      <SkillBox
+        style={{ width: '100%', height: '100%' }}
+        transition={{
+          type: 'tween',
+          duration: 0.7
+        }}
+      >
+        <SkillName name="TypeScript">
+          <SkillIcon id="typescript" width="80%" height="80%" />
+        </SkillName>
+      </SkillBox>
+    </GridItem>
+    <GridItem w={100} h={100} gridColumn="5/6" gridRow="2/3">
+      <SkillBox
+        transition={{
+          type: 'tween',
+          duration: 0.7,
+          delay: 0.1
+        }}
+      >
+        <SkillName name="ReactJS">
           <SkillIcon id="react-js" />
-        </motion.div>
-      </GridItem>
-      <GridItem bg="orange.300" w={100} h={100} gridColumn="9/10" gridRow="6/7">
-        <motion.div
-          animate={{ scale: 1 }}
-          initial={{ scale: 0.1 }}
-          transition={{
-            type: 'tween',
-            duration: 1.1
-          }}
-        >
-          <SkillIcon id="redux" />
-        </motion.div>
-      </GridItem>
-      <GridItem
-        bg="orange.300"
-        w={100}
-        h={100}
-        gridColumn="10/11"
-        gridRow="4/5"
-      >
-        <SkillIcon id="styled-components" />
-      </GridItem>
-      <GridItem
-        bg="orange.300"
-        w={100}
-        h={100}
-        gridColumn="10/11"
-        gridRow="2/3"
-      >
-        <motion.div
-          animate={{ scale: 1 }}
-          initial={{ scale: 0.1 }}
-          transition={{
-            type: 'tween',
-            duration: 0.6
-          }}
-        >
-          <SkillIcon id="material-ui" />{' '}
-        </motion.div>
-      </GridItem>
-      <GridItem bg="green.300" gridRow="3/5" gridColumn="5/9">
-        <SkillMainIcon />
-      </GridItem>
-    </Grid>
-  );
-};
+        </SkillName>
+      </SkillBox>
+    </GridItem>
+    <GridItem gridRow="2/4" gridColumn="3/5">
+      <SkillMainIcon />
+    </GridItem>
+  </Grid>
+);
 
 export default Skills;

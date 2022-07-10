@@ -4,7 +4,7 @@ import WorkingWoman from '../Icons/WorkingWoman';
 const HeroSection = () => {
   console.log('hero section');
   return (
-    <Container maxW="6xl" px={{ base: 6, md: 3 }} py={24}>
+    <Container maxW="6xl" px={{ base: 6, md: 3 }} py={12}>
       <Stack direction={{ base: 'column', md: 'row' }} justifyContent="center">
         <Stack
           direction="column"
@@ -13,7 +13,7 @@ const HeroSection = () => {
           maxW="480px"
         >
           <chakra.h1
-            fontSize="5xl"
+            fontSize="4xl"
             lineHeight={1}
             fontWeight="bold"
             textAlign="left"

@@ -1,12 +1,8 @@
-import CssIcon from '../Icons/CssIcon';
-import HtmlIcon from '../Icons/HtmlIcon';
-import JsIcon from '../Icons/JsIcon';
-import ReactJsIcon from '../Icons/ReactJsIcon';
-import TsIcon from '../Icons/TsIcon';
-import MuiIcon from '../Icons/MuiIcon';
-import ReduxIcon from '../Icons/ReduxIcon';
-import StyledComponentsIcon from '../Icons/StyledComponentsIcon';
-import GitIcon from '../Icons/GitIcon';
+import CssIcon from '../../../Icons/CssIcon';
+import HtmlIcon from '../../../Icons/HtmlIcon';
+import JsIcon from '../../../Icons/JsIcon';
+import ReactJsIcon from '../../../Icons/ReactJsIcon';
+import TsIcon from '../../../Icons/TsIcon';
 
 interface ISkill {
   name: string;
@@ -27,6 +23,8 @@ export const skills: ISkill[] = [
 
 interface ISkillIcon {
   id: string;
+  width?: string;
+  height?: string;
 }
 
 const SkillIcon = ({ id, ...props }: ISkillIcon) => (
@@ -35,11 +33,7 @@ const SkillIcon = ({ id, ...props }: ISkillIcon) => (
     {id === 'css' && <CssIcon {...props} />}
     {id === 'javascript' && <JsIcon {...props} />}
     {id === 'typescript' && <TsIcon {...props} />}
-    {id === 'git' && <GitIcon {...props} />}
     {id === 'react-js' && <ReactJsIcon {...props} />}
-    {id === 'redux' && <ReduxIcon {...props} />}
-    {id === 'styled-components' && <StyledComponentsIcon {...props} />}
-    {id === 'material-ui' && <MuiIcon {...props} />}
   </>
 );
 
