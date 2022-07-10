@@ -7,20 +7,29 @@ import { Qualities } from './components/Qualities';
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Hero />
-    <Grid
-      gridTemplateRows={{ md: '1fr', base: '1fr 1fr' }}
-      gridTemplateColumns={{ md: '2fr 1fr', base: '1fr' }}
-      maxW="7xl"
-      margin="0 auto"
-    >
+    <Grid>
       <GridItem>
-        <Skills />
+        <Hero />
       </GridItem>
       <GridItem>
-        <Qualities />
+        <Grid
+          gridTemplateRows={{ md: '1fr', base: '1fr 1fr' }}
+          gridTemplateColumns={{ md: '2fr 1fr', base: '1fr' }}
+          maxW="7xl"
+          margin="0 auto"
+        >
+          <GridItem>
+            <Skills />
+          </GridItem>
+          <GridItem>
+            <Qualities />
+          </GridItem>
+        </Grid>
+      </GridItem>
+      <GridItem>
+        {' '}
+        <Contact />
       </GridItem>
     </Grid>
-    <Contact />
   </ChakraProvider>
 );

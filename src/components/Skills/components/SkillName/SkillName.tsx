@@ -13,7 +13,7 @@ const SkillBox = ({ children, name }: ISkillBox) => (
       {children}
     </Container>
     <Container
-      bg="rgb(144, 205, 244, 0.5)"
+      bg="rgb(135, 172, 163, 0.8)"
       sx={{
         position: 'relative',
         top: '-100%',
