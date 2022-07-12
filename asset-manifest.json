@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/marlena/static/js/main.b69ec43e.js",
+    "static/js/377.88d300c2.chunk.js": "/marlena/static/js/377.88d300c2.chunk.js",
+    "index.html": "/marlena/index.html",
+    "main.b69ec43e.js.map": "/marlena/static/js/main.b69ec43e.js.map",
+    "377.88d300c2.chunk.js.map": "/marlena/static/js/377.88d300c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b69ec43e.js"
+  ]
+}
