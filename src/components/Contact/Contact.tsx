@@ -1,4 +1,13 @@
-import { Container, Stack, Box, chakra, Text } from '@chakra-ui/react';
+import {
+  Container,
+  Stack,
+  Box,
+  chakra,
+  Text,
+  IconButton,
+  Link
+} from '@chakra-ui/react';
+import { AiFillGithub } from 'react-icons/all';
 import PersonalEmail from '../Icons/PersonalEmail';
 
 const ContactSection = () => (
@@ -54,9 +63,26 @@ const ContactSection = () => (
             marlena.frontend@gmail.com
           </chakra.a>
         </chakra.div>
+        <Box textAlign="center">
+          <IconButton
+            variant="outline"
+            colorScheme="teal"
+            aria-label="page source code"
+            icon={<AiFillGithub />}
+            as={Link}
+            isExternal
+            //  todo: href
+            isRound
+            title="source code"
+            sx={{ margin: '0 auto' }}
+          />
+        </Box>
       </Box>
     </Stack>
   </Container>
+  //  todo: footer with github source
+  //  title
+  //  deploy
 );
 
 export default ContactSection;
