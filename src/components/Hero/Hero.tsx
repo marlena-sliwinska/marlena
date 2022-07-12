@@ -30,14 +30,14 @@ const HeroSection = () => {
             color="gray.500"
           >
             If you are looking for an ambitious, intelligent and passionate
-            co-worker, you are in the right place. If you have any questions
-            don&apos;t hesitate to contact me.
+            co-worker, you are in the right place.
           </Text>
         </Stack>
         <Box
           ml={{ base: 0, md: 5 }}
           maxW={{ base: 'xs', md: '6xl' }}
           pos="relative"
+          height={{ base: '150px', md: '200px' }}
         >
           <WorkingWoman />
         </Box>

@@ -27,7 +27,6 @@ export const App = () => (
         </Grid>
       </GridItem>
       <GridItem>
-        {' '}
         <Contact />
       </GridItem>
     </Grid>

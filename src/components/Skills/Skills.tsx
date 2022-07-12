@@ -7,8 +7,8 @@ import SkillBox from './components/SkillBox/SkillBox';
 const Skills = () => (
   <Grid
     mr="50px"
-    gridTemplateRows="repeat(3,minmax(60px,1fr))"
-    gridTemplateColumns="repeat(5,minmax(60px,1fr))"
+    gridTemplateRows="repeat(3,minmax(50px,1fr))"
+    gridTemplateColumns="repeat(5,minmax(50px,1fr))"
     justifyContent="left"
     gap="2"
     fontWeight="bold"

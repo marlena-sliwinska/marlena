@@ -1,10 +1,13 @@
-const PersonalEmail = () => (
+import { IIcon } from './Icon.model';
+
+const PersonalEmail = (props: IIcon) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     data-name="Layer 1"
     width="100%"
     height="100%"
     viewBox="0 0 890 729.78732"
+    {...props}
   >
     <path
       d="M374.67742,751.01587l1.81026,38.1569.00007.00154a24.3452,24.3452,0,0,1-23.16357,25.46925l-.79019.03746-2.96371-62.47386Z"
