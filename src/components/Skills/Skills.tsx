@@ -7,14 +7,19 @@ import SkillBox from './components/SkillBox/SkillBox';
 const Skills = () => (
   <Grid
     mr="50px"
-    gridTemplateRows="repeat(3,minmax(50px,1fr))"
-    gridTemplateColumns="repeat(5,minmax(50px,1fr))"
+    gridTemplateRows="repeat(3,1fr)"
+    gridTemplateColumns="repeat(5,1fr)"
     justifyContent="left"
     gap="2"
     fontWeight="bold"
     margin="0 auto"
   >
-    <GridItem w={100} h={100} gridColumn="1/2" gridRow="2/3">
+    <GridItem
+      w={{ base: '60px', md: 100 }}
+      h={{ base: '60px', md: 100 }}
+      gridColumn="1/2"
+      gridRow="2/3"
+    >
       <SkillBox
         transition={{
           type: 'tween',
@@ -27,7 +32,11 @@ const Skills = () => (
         </SkillName>
       </SkillBox>
     </GridItem>
-    <GridItem w={90} h={90} gridColumn="2/3">
+    <GridItem
+      w={{ base: '65px', md: 90 }}
+      h={{ base: '65px', md: 90 }}
+      gridColumn="2/3"
+    >
       <SkillBox
         transition={{
           type: 'tween',
@@ -40,7 +49,12 @@ const Skills = () => (
         </SkillName>
       </SkillBox>
     </GridItem>
-    <GridItem w={100} h={100} gridColumn="2/3" gridRow="3/4">
+    <GridItem
+      w={{ base: '60px', md: 100 }}
+      h={{ base: '60px', md: 100 }}
+      gridColumn="2/3"
+      gridRow="3/4"
+    >
       <SkillBox
         transition={{
           type: 'tween',
@@ -66,7 +80,12 @@ const Skills = () => (
         </SkillName>
       </SkillBox>
     </GridItem>
-    <GridItem w={100} h={100} gridColumn="5/6" gridRow="2/3">
+    <GridItem
+      w={{ base: '60px', md: 100 }}
+      h={{ base: '60px', md: 100 }}
+      gridColumn="5/6"
+      gridRow="2/3"
+    >
       <SkillBox
         transition={{
           type: 'tween',

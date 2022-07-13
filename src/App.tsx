@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { ChakraProvider, Grid, GridItem, theme } from '@chakra-ui/react';
+import { ChakraProvider, Grid, GridItem } from '@chakra-ui/react';
 import { Skills } from './components/Skills';
 import { Hero } from './components/Hero';
 import { Contact } from './components/Contact';
 import { Qualities } from './components/Qualities';
+import theme from './appTheme';
 
 export const App = () => (
   <ChakraProvider theme={theme}>
