@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/marlena/static/js/main.54cffc98.js",
+    "main.js": "/marlena/static/js/main.8146d5e6.js",
     "static/js/377.88d300c2.chunk.js": "/marlena/static/js/377.88d300c2.chunk.js",
     "index.html": "/marlena/index.html",
-    "main.54cffc98.js.map": "/marlena/static/js/main.54cffc98.js.map",
+    "main.8146d5e6.js.map": "/marlena/static/js/main.8146d5e6.js.map",
     "377.88d300c2.chunk.js.map": "/marlena/static/js/377.88d300c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.54cffc98.js"
+    "static/js/main.8146d5e6.js"
   ]
 }
