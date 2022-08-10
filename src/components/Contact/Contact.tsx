@@ -70,8 +70,8 @@ const ContactSection = () => (
             aria-label="page source code"
             icon={<AiFillGithub />}
             as={Link}
+            href="https://github.com/marlena-sliwinska/marlena"
             isExternal
-            //  todo: href
             isRound
             title="source code"
             sx={{ margin: '0 auto' }}
@@ -80,7 +80,7 @@ const ContactSection = () => (
       </Box>
     </Stack>
   </Container>
-  //  todo: footer with github source
+
   //  title
   //  deploy
 );
